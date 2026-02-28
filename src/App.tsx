@@ -257,7 +257,7 @@ export default function App() {
                     <Terminal className="w-4 h-4" /> FRONTEND_CORE
                   </h4>
                   <div className="flex flex-wrap gap-2">
-                    {['React', 'Next.js', 'TypeScript', 'Tailwind', 'Framer Motion', 'Three.js', 'Redux', 'Vue'].map(s => (
+                    {['React', 'Angular', 'TypeScript', 'Tailwind', 'Framer Motion', 'Three.js', 'Redux', 'Vue'].map(s => (
                       <motion.div
                         key={s}
                         whileHover={{ 
