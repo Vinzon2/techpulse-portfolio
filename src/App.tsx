@@ -246,7 +246,7 @@ export default function App() {
           {/* Skills Section */}
           <section id="skills" className="mb-32">
             <SectionHeader 
-              title="Technical Arsenal" 
+              title="Technical" 
               subtitle="SKILLS" 
               icon={Code2} 
             />
