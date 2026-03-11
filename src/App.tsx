@@ -141,7 +141,7 @@ const [password, setPassword] = useState("");
                   >
                     I BUILD <br />
                     <span className="text-tech-accent">DIGITAL</span> <br />
-                    INFRASTRUCTURE
+                    PLATFORM
                   </motion.h1>
                   
                   {/* Real-time moving profile name */}
