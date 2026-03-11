@@ -57,7 +57,10 @@ const ServiceCard = ({ title, description, icon: Icon }: { title: string; descri
 
 export default function App() {
   const [certificates, setCertificates] = useState<{ id: string; url: string; name: string }[]>([]);
-  const [isContacting, setIsContacting] = useState(false);
+const [isContacting, setIsContacting] = useState(false);
+
+const [isAdmin, setIsAdmin] = useState(false);
+const [password, setPassword] = useState("");
 
   const onDrop = useCallback((acceptedFiles: File[]) => {
     acceptedFiles.forEach(file => {
@@ -336,7 +339,31 @@ export default function App() {
               </div>
             </div>
           </section>
-
+         {/* Admin Login */}
+{!isAdmin && (
+  <div className="mb-6 flex gap-2">
+    <input
+      type="password"
+      placeholder="Admin Password"
+      className="px-4 py-2 bg-tech-bg border border-tech-border rounded text-white"
+      onChange={(e) => setPassword(e.target.value)}
+    />
+    <button
+      className="px-4 py-2 bg-tech-accent text-black rounded font-bold"
+      onClick={() => {
+        if (password === "vinzonadmin") {
+          setIsAdmin(true);
+        } else {
+          alert("Access denied");
+        }
+      }}
+    >
+      Admin Login
+    </button>
+  </div>
+)}
+         
+         
           {/* Certificates Section */}
           <section id="certificates" className="mb-32">
             <SectionHeader 
