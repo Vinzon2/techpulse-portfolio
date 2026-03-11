@@ -374,6 +374,7 @@ const [password, setPassword] = useState("");
             
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
               {/* Upload Area */}
+              {isAdmin && (
               <div 
                 {...getRootProps()} 
                 className={cn(
@@ -387,9 +388,10 @@ const [password, setPassword] = useState("");
                 </div>
                 <div className="text-center px-4">
                   <p className="text-sm font-bold">Upload Certificate</p>
-                  <p className="text-xs text-gray-500 mt-1">Drag & drop or click to browse</p>
+                  <p className="text-xs text-gray-500 mt-1">Admin Only</p>
                 </div>
               </div>
+              )}
 
               {/* Display Area */}
               <AnimatePresence mode="popLayout">
