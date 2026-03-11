@@ -187,7 +187,7 @@ export default function App() {
               <div className="relative">
                 <div className="aspect-square rounded-2xl overflow-hidden border border-tech-border bg-tech-surface relative group">
                   <img 
-                    src="https://picsum.photos/seed/tech/800/800" 
+                    src="https://scontent.fceb5-1.fna.fbcdn.net/v/t39.30808-1/617118817_122331361874000637_4677284849694671522_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=107&ccb=1-7&_nc_sid=1d2534&_nc_aid=0&_nc_eui2=AeEMQNMV_YrMHqGWEWPg7UtFIcmIIr1Zpm4hyYgivVmmbpv2Q6wgNsp0bZfcLlTQSwFiDt71VbllYtHtjS9NgLqq&_nc_ohc=8zmrVzFvBpEQ7kNvwGcLghl&_nc_oc=AdlHxrDOP7SGFyhOpmKnTAgdLpPzgtm8CfAoytYnaG0C11VNBtgKKBzqKrJ7yVXmBCs&_nc_zt=24&_nc_ht=scontent.fceb5-1.fna&_nc_gid=iGew9j0uZPgREhYFvZYd1A&_nc_ss=8&oh=00_AfwcXonwnIyQFQjLP69MvjlmqAy5RQNi1Waxls71-yD5gg&oe=69B758C2" 
                     alt="Profile" 
                     className="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700"
                     referrerPolicy="no-referrer"
